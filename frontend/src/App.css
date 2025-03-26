@@ -1,0 +1,53 @@
+/* 🔹 App Container */
+.app-container {
+  padding: 20px;
+  background: #121212;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 🔹 App Title */
+.app-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #F5F5F5;
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Increase the container height */
+.log-sheet-container {
+  width: 98%;
+  max-width: 1200px; /* ⬆️ Wider for better layout */
+  background: #f5f5f5;
+  padding: 40px; /* ⬆️ More space */
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  text-align: center;
+  border: 3px solid #ccc;
+  min-height: 500px; /* ⬆️ Ensure enough space for the log */
+  overflow: visible; /* ⬆️ Prevent content clipping */
+}
+
+/* ✅ Ensure the canvas fully displays */
+.log-sheet-container canvas {
+  display: block;
+  width: 100%;
+  max-width: 1150px; /* ⬆️ Wider to ensure spacing */
+  height: auto;
+  min-height: 380px; /* ⬆️ Ensure full visibility */
+  margin: auto;
+  background: #fcfcfc;
+  border: 3px solid transparent; /* ⬆️ Removed thin black border */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 15px; /* ⬆️ More space within */
+}
+
+
+
+

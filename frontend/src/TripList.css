@@ -1,0 +1,99 @@
+/* 🔹 Trip List Container */
+.trip-list-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #1e1e1e;  /* Dark background */
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 🔹 Individual Trip Card */
+.trip-card {
+  background: #292929; /* Darker card */
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease-in-out;
+}
+
+.trip-card:hover {
+  transform: translateY(-3px);
+}
+
+/* 🔹 Trip Header */
+.trip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.trip-header h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.trip-time {
+  font-size: 0.9rem;
+  background: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #bbb;
+}
+
+/* 🔹 Action Buttons */
+.trip-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+/* 🔹 General Button Styles */
+.btn {
+  border: none;
+  color: white;
+  padding: 12px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  min-width: 140px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* 🔹 Button Colors */
+.btn-yellow {
+  background: #d97706;
+}
+
+.btn-blue {
+  background: #1d4ed8;
+}
+
+.btn-green {
+  background: #047857;
+}
+
+.btn-red {
+  background: #b91c1c;
+}
+
+/* 🔹 Trip Map Container */
+.trip-map-container {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #1e1e1e;
+}
