@@ -12,3 +12,4 @@ urlpatterns = [
     path('api/get_route/', get_route, name="get_route"),
     path("api/trip-logs/<int:trip_id>/", get_trip_logs, name="trip_logs"),
 ]
+urlpatterns += router.urls  # ✅ Ensures all API endpoints are included

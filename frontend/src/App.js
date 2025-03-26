@@ -19,12 +19,12 @@ const App = () => {
   const [tripDistance, setTripDistance] = useState(0);  
   const [totalDriveHours, setTotalDriveHours] = useState(0);
   
-  const API_BASE_URL = "https://eld-logger.onrender.com/api";  
+  const API_BASE_URL = "https://eld-logger.onrender.com//api";  
 
   // Fetch trips  
   const fetchTrips = async () => {  
     try {  
-      const response = await axios.get(`${API_BASE_URL}/trips/`);  
+      const response = await axios.get("https://eld-logger.onrender.com/api/trips/");  
       setTrips(response.data);  
     } catch (error) {  
       console.error("Error fetching trips:", error);  
@@ -35,7 +35,7 @@ const App = () => {
     if (!tripId) return;  
 
     try {  
-      const response = await axios.get(`${API_BASE_URL}/trip-logs/${tripId}/`);  
+      const response = await axios.get(`https://eldlogger-backend.onrender.com/api/trip-logs/${tripId}/`);  
       const { trip_logs, fuel_stops, rest_stops, trip_distance, total_drive_hours } = response.data;  
 
       setLogData(trip_logs);  

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%_4#&mqh35f8)hxcp2&u@)0bt9&spfw*-aj95!1k1-nhy)+mh+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['eld-logger.onrender.com', 'https://eldlogger-hq3m8n1a6-ozioma-isaiahs-projects.vercel.app']
+ALLOWED_HOSTS = ['eld-logger.onrender.com', 'https://eldlogger-hq3m8n1a6-ozioma-isaiahs-projects.vercel.app', '127.0.0.1:8000', '127.0.0.1']
 
 
 # Application definition
@@ -133,3 +133,21 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #INSTALLED_APPS += ['corsheaders']
 #MIDDLEWARE.insert(0, 'corsheaders.middleware.CorsMiddleware')
 CORS_ALLOW_ALL_ORIGINS = True
+# ✅ Allow frontend to access backend
+CORS_ALLOWED_ORIGINS = [
+    "https://eldlogger-hq3m8n1a6-ozioma-isaiahs-projects.vercel.app",
+]
+# ✅ Allow all HTTP methods (GET, POST, etc.)
+CORS_ALLOW_METHODS = [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "OPTIONS",
+]
+
+# ✅ Allow all headers
+CORS_ALLOW_HEADERS = [
+    "authorization",
+    "content-type",
+]
