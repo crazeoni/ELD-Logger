@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%_4#&mqh35f8)hxcp2&u@)0bt9&spfw*-aj95!1k1-nhy)+mh+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['eld-logger.onrender.com', 'https://eldlogger-hq3m8n1a6-ozioma-isaiahs-projects.vercel.app']
 
 
 # Application definition
