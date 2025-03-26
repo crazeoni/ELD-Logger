@@ -13,7 +13,7 @@ const TripForm = ({ fetchTrips }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://127.0.0.1:8000/api/trips/", trip);
+      await axios.post("https://eld-logger.onrender.com/api/trips/", trip);
       fetchTrips();
       alert("🚀 Trip added successfully!");
       setTrip({ current_location: "", pickup_location: "", dropoff_location: "", current_cycle_hours: "" });

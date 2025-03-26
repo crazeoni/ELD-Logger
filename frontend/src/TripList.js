@@ -11,7 +11,7 @@ const TripList = ({ trips, onSelectTrip, fetchTrips }) => {
     if (!window.confirm("Are you sure you want to delete this trip?")) return;
 
     try {
-      await axios.delete(`http://127.0.0.1:8000/api/trips/${tripId}/`);
+      await axios.delete(`https://eld-logger.onrender.com/api/trips/${tripId}/`);
       alert("🚀 Trip deleted successfully!");
       fetchTrips(); // Refresh the trip list after deletion
     } catch (error) {

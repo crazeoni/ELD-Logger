@@ -10,7 +10,7 @@ const TripMap = ({ pickup, dropoff }) => {
     const fetchRoute = async () => {
       try {
         const res = await axios.get(
-          `http://127.0.0.1:8000/api/get_route/?pickup=${pickup}&dropoff=${dropoff}`
+          `https://eld-logger.onrender.com/api/get_route/?pickup=${pickup}&dropoff=${dropoff}`
         );
 
         console.log("🔍 API Response:", res.data); // ✅ Log API response
