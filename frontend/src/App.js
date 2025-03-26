@@ -19,7 +19,7 @@ const App = () => {
   const [tripDistance, setTripDistance] = useState(0);  
   const [totalDriveHours, setTotalDriveHours] = useState(0);
   
-  const API_BASE_URL = "https://eld-logger.onrender.com//api";  
+  const API_BASE_URL = "https://eld-logger.onrender.com";  
 
   // Fetch trips  
   const fetchTrips = async () => {  
