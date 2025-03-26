@@ -5,12 +5,13 @@ import axios from "axios";
 const TripMap = ({ pickup, dropoff }) => {
   const [route, setRoute] = useState([]);
   const [stops, setStops] = useState([]);
+  const API_BASE_URL = "https://eld-logger.onrender.com/api";
 
   useEffect(() => {
     const fetchRoute = async () => {
       try {
         const res = await axios.get(
-          `https://eld-logger.onrender.com/api/get_route/?pickup=${pickup}&dropoff=${dropoff}`
+          `${API_BASE_URL}/get_route/?pickup=${pickup}&dropoff=${dropoff}`
         );
 
         console.log("🔍 API Response:", res.data); // ✅ Log API response

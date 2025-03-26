@@ -5,13 +5,14 @@ import "./TripList.css"; // ✅ Import CSS file for styling
 
 const TripList = ({ trips, onSelectTrip, fetchTrips }) => {
   const [selectedTrip, setSelectedTrip] = useState(null);
+  const API_BASE_URL = "https://eld-logger.onrender.com/api";
 
   // ✅ Delete a trip from the backend
   const deleteTrip = async (tripId) => {
     if (!window.confirm("Are you sure you want to delete this trip?")) return;
 
     try {
-      await axios.delete(`https://eld-logger.onrender.com/api/trips/${tripId}/`);
+      await axios.delete(`${API_BASE_URL}/trips/${tripId}/`);
       alert("🚀 Trip deleted successfully!");
       fetchTrips(); // Refresh the trip list after deletion
     } catch (error) {
