@@ -1,7 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from trips.views import TripViewSet, home
-from .views import get_route, get_trip_logs
+from .views import TripViewSet, home, get_route, get_trip_logs
 
 router = DefaultRouter()
 router.register(r'trips', TripViewSet)
